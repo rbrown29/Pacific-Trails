@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!-- 
+Name: Yurts
+File Name: yurts.html
+Date: 02/28/2020 
+Programmer: Richard Brown
+-->
+<html lang="en">
+
+<%- include('layouts/head');-%>
+
+<body>
+    <div id="wrapper">
+        <%- include('layouts/header'); -%>
+        <%- include('layouts/nav'); -%>
+        
+        <div id="yurthero"></div>
+        <main>
+            <h2>The Yurts at Pacific Trails</h2>
+            <dl>
+                <dt>What is a yurt?</dt>
+                <dd>Our luxury yurts are permanent structures four feet off the ground. Each yurt has canvas walls, a wooden, floor, and a roof dome that can be opened.</dd>
+                <dt>How are the yurts furnished?</dt>
+                <dd>Each yurt is furnished with a queen-size bed with down quilt and gas-fired stove. The luxury camping experience also includes electricity and a sink with hot and cold running water. Shower and restroom facilities are located in the lodge.</dd>
+                <dt>What should I bring?</dt>
+                <dd>Bring a sense of adventure and time to relax! Most guests also pack comfortable walking shoes and plan to dress for changing weather with layers of clothing.</dd>
+            </dl>
+            <h3>Yurt Packages</h3>
+            <p>A variety of luxury yurt packages are available. Choose a package from below and contact us to begin your reservation. We're happy to build a custom package just for you!
+            </p>
+            <table>
+                <tr>
+                    <td>Package Name</td>
+                    <td>Description</td>
+                    <td>Nights</td>
+                    <td>Cost per Person</td>
+                </tr>
+                <tr>
+                    <td>Weekend Escape</td>
+                    <td class="text">Two breakfasts, a trail map, and a picnic snack.</td>
+                    <td>2</td>
+                    <td>$450</td>
+                </tr>
+                <tr>
+                    <td>Zen Retreat</td>
+                    <td class="text">Four breakfasts, a trail map, a pass for the daily Yoga.</td>
+                    <td>4</td>
+                    <td>$600</td>
+                </tr>
+                <tr>
+                    <td>Kayak Away</td>
+                    <td class="text">Two breakfasts, two hours of kayak rental daily, and a trail map.</td>
+                    <td>2</td>
+                    <td>$500</td>
+                </tr>
+            </table>
+            <br />
+            <%- include('layouts/footer'); -%>
+        </main>
+    </div>
+</body>
+
+</html>

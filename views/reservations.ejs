@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<!-- 
+Name: Pacific trails
+File Name: reservations.html
+Date: 02/28/2020 
+Programmer: Richard Brown
+-->
+<html lang="en">
+
+<%- include('layouts/head');-%>
+
+<body>
+    <div id="wrapper">
+
+        <%- include('layouts/header'); -%>
+        <%- include('layouts/nav'); -%>
+
+        <main>
+
+            <h2>Reservations at Pacific Trails</h2>
+
+            <h3>Contact Us</h3>
+
+            <p>Required information is marked with an asterisk (*).</p>
+
+            <form method="post" action="/reservations">
+
+                <label for="fName">*First Name:</label>
+                <input type="text" name="fName" id="fName" required>
+            
+                <label for="lName">*Last Name:</label>
+                <input type="text" name="lName" id="lName" required>
+            
+                <label for="email">*E-Mail:</label>
+                <input type="email" name="email" id="email" required>
+            
+                <label for="phone">Phone:</label>
+                <input type="tel" name="phone" id="phone">
+            
+                <label for="date">Date:</label>
+                <input type="date" name="date" id="date">
+            
+                <label for="length">Nights:</label>
+                <input type="number" min="1" max="14" name="length" id="length">
+            
+                <label for="message">*Comments:</label>
+                <textarea name="message" id="message" rows="2" cols="20" required></textarea>
+                <input id="mySubmit" type="submit" value="Submit">
+            
+            </form>
+            
+
+
+        </main>
+
+        <%- include('layouts/footer'); -%>
+    </div>
+</body>
+
+</html>
